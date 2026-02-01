@@ -241,3 +241,89 @@ canvas {
 .ghost-cursor-letter::after {
   display: none;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .toolbar {
+    padding: 8px 12px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .toolbar button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .color-picker,
+  .width-control {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
+
+  .color-picker label,
+  .width-control label {
+    font-size: 12px;
+  }
+
+  .color-picker input[type="color"] {
+    width: 32px;
+    height: 24px;
+  }
+
+  .width-control input[type="range"] {
+    width: 80px;
+  }
+
+  .user-info {
+    margin-left: 0;
+    margin-top: 8px;
+    font-size: 10px;
+  }
+
+  .username-modal {
+    padding: 24px 16px;
+    min-width: 250px;
+  }
+
+  .username-modal h2 {
+    font-size: 1.1rem;
+  }
+
+  .username-modal input[type="text"] {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .username-modal button[type="submit"] {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .toolbar {
+    padding: 6px 8px;
+    gap: 6px;
+  }
+
+  .toolbar button {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .color-picker input[type="color"] {
+    width: 28px;
+    height: 20px;
+  }
+
+  .width-control input[type="range"] {
+    width: 60px;
+  }
+
+  .username-modal {
+    padding: 20px 12px;
+    min-width: 220px;
+  }
+}
